@@ -9,7 +9,7 @@ export default function Home() {
     if (!input) return;
     setLoading(true);
     try {
-      const res = await fetch('https://testbot-mrck.onrender.com/ask', {
+      const res = await fetch('https://DEINE-BACKEND-URL.onrender.com/ask', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: input }),
