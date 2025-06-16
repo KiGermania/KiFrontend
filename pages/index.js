@@ -9,7 +9,7 @@ export default function Home() {
     if (!input) return;
     setLoading(true);
     try {
-      const res = await fetch('ki-frontend-jade.vercel.app/ask', {
+      const res = await fetch('https://white-label-bot-karokan.vercel.app/ask', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: input }),
